@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Clinic Demo | Location</title>
+  <meta name="description"
+    content="Dental Clinic Demo — 4.9★ rated dental clinic with 215+ reviews. Painless treatment by specialist doctors. Root canals, implants, scaling, cosmetic dentistry and more.">
+  <meta name="keywords"
+    content="dental clinic, dentist, dental care, painless dental treatment, root canal, dental implants, teeth cleaning">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dental Clinic Demo — Trusted Dental Clinic in Location">
+  <meta property="og:description"
+    content="Specialist-led dental care with 16+ years of experience. Rated 4.9★ by 215+ patients. Painless treatment, modern equipment, honest pricing.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+
+  <!-- Favicon (tooth emoji as SVG fallback) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Dental Clinic Demo",
+    "image": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Address",
+      "addressLocality": "Location",
+      "addressRegion": "State",
+      "postalCode": "postalCode",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91XXXXXXXXX",
+    "url": "",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "215",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "21:00"
+    },
+    "medicalSpecialty": ["Prosthodontics", "Periodontics"],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <i data-lucide="smile"></i>
+        </div>
+        <div class="nav-logo-text">
+          Dental Clinic Demo
+          <span>Dental Care</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+91XXXXXXXXXX" class="btn btn-primary nav-cta">
+          <i data-lucide="phone" style="width:16px;height:16px;"></i>
+          Call Now
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#doctors" class="mobile-link">Doctors</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#reviews" class="mobile-link">Reviews</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="tel:+91XXXXXXXXXX" class="btn btn-primary">
+      <i data-lucide="phone" style="width:16px;height:16px;"></i>
+      Call Now
+    </a>
+  </div>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="star">★★★★★</span>
+            <span>4.9 Rated · 215+ Patient Reviews</span>
+          </div>
+
+          <h1 class="hero-title">
+            Gentle, Expert Dental Care in <span class="highlight">Location</span>
+          </h1>
+
+          <p class="hero-description">
+            Specialist-led treatment with 16+ years of experience. Painless procedures, modern equipment, and honest
+            pricing — trusted by hundreds of families in XXX and across XXX.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="tel:+91XXXXXXXXXX" class="btn btn-primary" id="hero-call-btn">
+              <i data-lucide="phone" class="btn-icon" style="width:18px;height:18px;"></i>
+              Call Now – XXXXX XXXXX
+            </a>
+            <a href="maps.google" target="_blank" rel="noopener" class="btn btn-outline" id="hero-directions-btn">
+              <i data-lucide="map-pin" class="btn-icon" style="width:18px;height:18px;"></i>
+              Get Directions
+            </a>
+          </div>
+
+          <div class="hero-stats-mini">
+            <div class="hero-stat">
+              <div class="hero-stat-number">16+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">215+</div>
+              <div class="hero-stat-label">Happy Patients</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">4.9</div>
+              <div class="hero-stat-label">Google Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image reveal reveal-delay-2">
+          <div class="hero-image-wrapper">
+            <img src="" alt="Dental Care clinic exterior" loading="eager">
+            <div class="hero-image-badge">
+              <div class="pulse-dot"></div>
+              <span>Open Today · 10:OO AM - 9:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TRUST BAR
+       ============================================ -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <div class="trust-item reveal">
+          <div class="trust-item-icon"><i data-lucide="award"></i></div>
+          <div class="trust-item-value">16+</div>
+          <div class="trust-item-label">Years of Expertise</div>
+        </div>
+        <div class="trust-item reveal reveal-delay-1">
+          <div class="trust-item-icon"><i data-lucide="star"></i></div>
+          <div class="trust-item-value">4.9</div>
+          <div class="trust-item-label">Google Rating</div>
+        </div>
+        <div class="trust-item reveal reveal-delay-2">
+          <div class="trust-item-icon"><i data-lucide="users"></i></div>
+          <div class="trust-item-value">215+</div>
+          <div class="trust-item-label">Patient Reviews</div>
+        </div>
+        <div class="trust-item reveal reveal-delay-3">
+          <div class="trust-item-icon"><i data-lucide="shield-check"></i></div>
+          <div class="trust-item-value">Specialist</div>
+          <div class="trust-item-label">Care</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT
+       ============================================ -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="" alt="Modern dental treatment room at Dental Care with advanced equipment">
+          <div class="about-image-overlay">
+            <i data-lucide="shield-check" style="width:18px;height:18px;"></i>
+            Modern, hygienic clinical environment
+          </div>
+        </div>
+
+        <div class="about-content reveal reveal-delay-2">
+          <span class="section-label">About Our Clinic</span>
+          <h2 class="section-title">Your Trusted Dental Partner in Location</h2>
+          <p class="section-subtitle">
+            Dental Care is a specialist-led dental clinic in Location, founded with a simple belief —
+            every patient deserves gentle, honest, and effective dental care.
+          </p>
+          <p>
+            Led by Dr. XYZ (Prosthodontics) and Dr. XYZ (Periodontics), both with over 16
+            years of specialty experience and affiliated with Dental College & Hospital, we deliver
+            treatments backed by deep clinical knowledge. From routine cleanings to complex implant work, our focus
+            remains the same — precision, comfort, and transparency.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <div class="about-highlight-icon"><i data-lucide="heart-handshake" style="width:20px;height:20px;"></i>
+              </div>
+              <div class="about-highlight-text">Painless, patient-friendly treatment</div>
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon"><i data-lucide="scan-line" style="width:20px;height:20px;"></i></div>
+              <div class="about-highlight-text">Advanced dental equipment</div>
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></div>
+              <div class="about-highlight-text">Hygienic, modern environment</div>
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon"><i data-lucide="indian-rupee" style="width:20px;height:20px;"></i></div>
+              <div class="about-highlight-text">Honest and affordable pricing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       DOCTORS
+       ============================================ -->
+  <section class="doctors section-padding" id="doctors">
+    <div class="container text-center">
+      <span class="section-label">Our Specialists</span>
+      <h2 class="section-title">Experienced Doctors You Can Trust</h2>
+      <p class="section-subtitle">
+        Our doctors bring over XX years of specialty experience and academic excellence from one of State's premier
+        dental institutions.
+      </p>
+
+      <div class="doctors-grid">
+        <!-- Dr. XYZ -->
+        <div class="doctor-card reveal">
+          <div
+            style="width:100%;height:320px;background:linear-gradient(135deg, var(--primary-bg) 0%, #d4f0f0 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
+            <i data-lucide="stethoscope" style="width:64px;height:64px;color:var(--primary);opacity:0.6;"></i>
+            <span
+              style="font-family:var(--font-heading);font-weight:600;color:var(--primary);font-size:0.85rem;letter-spacing:1px;text-transform:uppercase;">Prosthodontics</span>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. XYZ</h3>
+            <div class="doctor-specialty">Prosthodontics Specialist</div>
+            <div class="doctor-credentials">
+              <div class="doctor-credential">
+                <span class="doctor-credential-icon"><i data-lucide="graduation-cap"
+                    style="width:16px;height:16px;"></i></span>
+                <span>Assistant Professor, Dental College & Hospital, Location</span>
+              </div>
+              <div class="doctor-credential">
+                <span class="doctor-credential-icon"><i data-lucide="calendar-check"
+                    style="width:16px;height:16px;"></i></span>
+                <span>XX+ years of specialty experience</span>
+              </div>
+              <div class="doctor-credential">
+                <span class="doctor-credential-icon"><i data-lucide="badge-check"
+                    style="width:16px;height:16px;"></i></span>
+                <span>Expert in crowns, bridges, dentures & implant prosthetics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Poonam -->
+        <div class="doctor-card reveal reveal-delay-2">
+          <div
+            style="width:100%;height:320px;background:linear-gradient(135deg, var(--primary-bg) 0%, #d4f0f0 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
+            <i data-lucide="stethoscope" style="width:64px;height:64px;color:var(--primary);opacity:0.6;"></i>
+            <span
+              style="font-family:var(--font-heading);font-weight:600;color:var(--primary);font-size:0.85rem;letter-spacing:1px;text-transform:uppercase;">Periodontics</span>
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. XYZ</h3>
+            <div class="doctor-specialty">Periodontics Specialist</div>
+            <div class="doctor-credentials">
+              <div class="doctor-credential">
+                <span class="doctor-credential-icon"><i data-lucide="graduation-cap"
+                    style="width:16px;height:16px;"></i></span>
+                <span>Dental College & Hospital, Location</span>
+              </div>
+              <div class="doctor-credential">
+                <span class="doctor-credential-icon"><i data-lucide="calendar-check"
+                    style="width:16px;height:16px;"></i></span>
+                <span>XX+ years of specialty experience</span>
+              </div>
+              <div class="doctor-credential">
+                <span class="doctor-credential-icon"><i data-lucide="badge-check"
+                    style="width:16px;height:16px;"></i></span>
+                <span>Expert in gum care, scaling & periodontal surgery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHY CHOOSE US
+       ============================================ -->
+  <section class="why-us section-padding" id="why-us">
+    <div class="container text-center">
+      <span class="section-label">Why Patients Choose Us</span>
+      <h2 class="section-title">What Makes This Different</h2>
+      <p class="section-subtitle">
+        Trusted by hundreds of patients in XXX for consistently gentle, professional, and transparent dental
+        care.
+      </p>
+
+      <div class="why-us-grid">
+        <div class="why-card reveal">
+          <div class="why-card-icon"><i data-lucide="heart-pulse"></i></div>
+          <h4 class="why-card-title">Painless Treatment</h4>
+          <p class="why-card-text">Patients consistently highlight the gentle, painless approach. We use modern
+            techniques to minimise discomfort during every procedure.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-card-icon"><i data-lucide="brain"></i></div>
+          <h4 class="why-card-title">Experienced Specialists</h4>
+          <p class="why-card-text">Both doctors bring XX+ years of specialty training and clinical practice from
+            Dental College, Location — one of State's top dental institutions.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-card-icon"><i data-lucide="monitor-check"></i></div>
+          <h4 class="why-card-title">Modern Equipment</h4>
+          <p class="why-card-text">Our clinic is outfitted with advanced dental equipment for accurate diagnosis and
+            efficient treatment. Patients notice the professional setup.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-card-icon"><i data-lucide="shield-plus"></i></div>
+          <h4 class="why-card-title">Hygienic Environment</h4>
+          <p class="why-card-text">Cleanliness and sterilisation are non-negotiable. Our clinic follows strict hygiene
+            protocols to ensure patient safety at every step.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-4">
+          <div class="why-card-icon"><i data-lucide="hand-coins"></i></div>
+          <h4 class="why-card-title">Honest Pricing</h4>
+          <p class="why-card-text">No hidden charges, no unnecessary treatments. We explain your options clearly and
+            offer genuine, moderate pricing for all procedures.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-5">
+          <div class="why-card-icon"><i data-lucide="message-circle-heart"></i></div>
+          <h4 class="why-card-title">Patient-First Approach</h4>
+          <p class="why-card-text">From clear explanations of procedures to follow-up care, every detail is designed
+            around making you feel comfortable and informed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES
+       ============================================ -->
+  <section class="services section-padding" id="services">
+    <div class="container text-center">
+      <span class="section-label">Our Services</span>
+      <h2 class="section-title">Complete Dental Care Under One Roof</h2>
+      <p class="section-subtitle">
+        From routine check-ups to complex dental implants — specialist-led treatment for every dental need.
+      </p>
+
+      <div class="services-tabs" id="services-tabs">
+        <button class="service-tab active" data-tab="preventive">Preventive Care</button>
+        <button class="service-tab" data-tab="restorative">Restorative</button>
+        <button class="service-tab" data-tab="replacement">Tooth Replacement</button>
+        <button class="service-tab" data-tab="surgical">Surgical</button>
+        <button class="service-tab" data-tab="cosmetic">Cosmetic</button>
+      </div>
+
+      <div class="services-content" id="services-content">
+        <!-- Preventive & Routine Care -->
+        <div class="service-panel active" data-panel="preventive">
+          <div class="service-panel-header">
+            <div class="service-panel-icon"><i data-lucide="shield-check"></i></div>
+            <div>
+              <h3 class="service-panel-title">Preventive & Routine Care</h3>
+              <p class="service-panel-desc">Regular maintenance to keep your teeth and gums healthy long-term</p>
+            </div>
+          </div>
+          <div class="service-list">
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Teeth Cleaning & Scaling</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Oral Hygiene Care</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Bleeding Gums Treatment</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Routine Dental Check-up</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restorative Dentistry -->
+        <div class="service-panel" data-panel="restorative">
+          <div class="service-panel-header">
+            <div class="service-panel-icon"><i data-lucide="wrench"></i></div>
+            <div>
+              <h3 class="service-panel-title">Restorative Dentistry</h3>
+              <p class="service-panel-desc">Repairing and restoring damaged teeth to their full function</p>
+            </div>
+          </div>
+          <div class="service-list">
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Root Canal Treatment</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Dental Crowns & Caps</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Dental Bridges</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Restorative Fillings</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tooth Replacement -->
+        <div class="service-panel" data-panel="replacement">
+          <div class="service-panel-header">
+            <div class="service-panel-icon"><i data-lucide="replace"></i></div>
+            <div>
+              <h3 class="service-panel-title">Tooth Replacement & Advanced Care</h3>
+              <p class="service-panel-desc">Permanent and removable solutions for missing teeth</p>
+            </div>
+          </div>
+          <div class="service-list">
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Dental Implants</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Complete & Partial Dentures</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Prosthodontic Solutions</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Implant-Supported Prosthetics</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Surgical -->
+        <div class="service-panel" data-panel="surgical">
+          <div class="service-panel-header">
+            <div class="service-panel-icon"><i data-lucide="syringe"></i></div>
+            <div>
+              <h3 class="service-panel-title">Surgical & Specialised Treatments</h3>
+              <p class="service-panel-desc">Expert surgical procedures handled with precision and care</p>
+            </div>
+          </div>
+          <div class="service-list">
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Tooth Extraction</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Wisdom Tooth Extraction</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Gum Surgery</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Oral & Maxillofacial Procedures</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cosmetic -->
+        <div class="service-panel" data-panel="cosmetic">
+          <div class="service-panel-header">
+            <div class="service-panel-icon"><i data-lucide="sparkles"></i></div>
+            <div>
+              <h3 class="service-panel-title">Cosmetic Dentistry</h3>
+              <p class="service-panel-desc">Enhancing the appearance of your smile with safe, proven methods</p>
+            </div>
+          </div>
+          <div class="service-list">
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Teeth Whitening</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Tooth Reshaping</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-dot"></div>
+              <div class="service-item-name">Smile Improvement Treatments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       REVIEWS
+       ============================================ -->
+  <section class="reviews section-padding" id="reviews">
+    <div class="container text-center">
+      <span class="section-label">Patient Reviews</span>
+      <h2 class="section-title">What Our Patients Say</h2>
+
+      <div class="reviews-header-stats">
+        <div class="review-overall-rating">
+          <div class="review-overall-number">4.9</div>
+          <div class="review-stars">★★★★★</div>
+          <div class="review-total">Based on 215+ Google Reviews</div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-card-quote">"</div>
+          <div class="review-card-stars">★★★★★</div>
+          <p class="review-card-text">Completely painless root canal treatment. The doctor explained every step clearly
+            before starting. Very professional and caring approach. Highly recommended for anyone nervous about dental
+            treatments.</p>
+          <div class="review-card-author">XYZ.</div>
+          <div class="review-card-treatment">Root Canal Treatment</div>
+        </div>
+
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-card-quote">"</div>
+          <div class="review-card-stars">★★★★★</div>
+          <p class="review-card-text">Best dental clinic in Location. The clinic is extremely clean and
+            well-maintained. Got my scaling done — very thorough and gentle. Fees are also very reasonable compared to
+            other clinics.</p>
+          <div class="review-card-author">XYZ.</div>
+          <div class="review-card-treatment">Teeth Cleaning & Scaling</div>
+        </div>
+
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-card-quote">"</div>
+          <div class="review-card-stars">★★★★★</div>
+          <p class="review-card-text">Got dental implants done here. Dr. XYZ is very experienced and made me feel
+            comfortable throughout the process. The results are excellent — feels completely natural. Genuine pricing
+            with no hidden costs.</p>
+          <div class="review-card-author">XYZ.</div>
+          <div class="review-card-treatment">Dental Implants</div>
+        </div>
+
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-card-quote">"</div>
+          <div class="review-card-stars">★★★★★</div>
+          <p class="review-card-text">Had severe bleeding gums for months. Dr. XYZ diagnosed the issue immediately
+            and the treatment was very effective. The clinic is hygienic and modern. Very happy with the results.</p>
+          <div class="review-card-author">XYZ.</div>
+          <div class="review-card-treatment">Gum Treatment</div>
+        </div>
+
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-card-quote">"</div>
+          <div class="review-card-stars">★★★★★</div>
+          <p class="review-card-text">Visited for wisdom tooth extraction. Was very anxious but the doctors were
+            extremely friendly and professional. The procedure was much smoother than I expected. Highly recommend this
+            clinic.</p>
+          <div class="review-card-author">XYZ.</div>
+          <div class="review-card-treatment">Wisdom Tooth Extraction</div>
+        </div>
+
+        <div class="review-card reveal reveal-delay-3">
+          <div class="review-card-quote">"</div>
+          <div class="review-card-stars">★★★★★</div>
+          <p class="review-card-text">Both doctors are very knowledgeable and take time to explain everything. Got
+            crowns and fillings done — excellent workmanship. The pricing is moderate and they don't push unnecessary
+            treatments.</p>
+          <div class="review-card-author">XYZ.</div>
+          <div class="review-card-treatment">Crowns & Fillings</div>
+        </div>
+      </div>
+
+      <div class="reviews-cta">
+        <a href="google.maps" target="_blank" rel="noopener">
+          Read all reviews on Google →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       GALLERY
+       ============================================ -->
+  <section class="gallery section-padding" id="gallery">
+    <div class="container text-center">
+      <span class="section-label">Our Clinic</span>
+      <h2 class="section-title">A Glimpse Inside</h2>
+      <p class="section-subtitle">
+        A modern, hygienic, and well-equipped dental clinic where patient comfort comes first.
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="" alt="Dental Care clinic, Location" loading="lazy">
+          <div class="gallery-item-label">Clinic Entrance — Location</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="" alt="Modern dental treatment room with advanced dental chairs and equipment" loading="lazy">
+          <div class="gallery-item-label">Treatment Room — Modern Equipment</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="" alt="Doctor performing dental procedure in full PPE at Dental Care" loading="lazy">
+          <div class="gallery-item-label">Specialist Treatment in Progress</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT
+       ============================================ -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Contact Us</span>
+        <h2 class="section-title">Visit Us or Get in Touch</h2>
+        <p class="section-subtitle" style="margin: 0 auto var(--space-md) auto;">
+          We're conveniently located in XYZ. Walk in or call ahead to schedule your visit.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i data-lucide="phone"></i></div>
+            <div>
+              <h4 class="contact-card-title">Phone</h4>
+              <p class="contact-card-text"><a href="tel:+91XXXXXXXXXX">0XXXXX XXXXX</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <h4 class="contact-card-title">Address</h4>
+              <p class="contact-card-text">Address,<br>Location, STATE PIN CODE</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i data-lucide="clock"></i></div>
+            <div>
+              <h4 class="contact-card-title">Clinic Hours</h4>
+              <p class="contact-card-text">Open · 10:00 AM - 9 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="tel:+91XXXXXXXXXX" class="btn btn-primary" id="contact-call-btn">
+              <i data-lucide="phone" style="width:16px;height:16px;"></i>
+              Call Now
+            </a>
+            <a href="maps.google" target="_blank" rel="noopener" class="btn btn-outline" id="contact-directions-btn">
+              <i data-lucide="navigation" style="width:16px;height:16px;"></i>
+              Get Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal reveal-delay-2">
+          <iframe src="google" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Dental Care location on Google Maps">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="nav-logo-text">
+            Dental Clinic
+            <span>Dental Care</span>
+          </div>
+          <p>
+            A specialist-led dental clinic in Location. Trusted by 215+ patients for gentle, honest,
+            and high-quality dental treatment.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#doctors">Our Doctors</a>
+            <a href="#services">Services</a>
+            <a href="#reviews">Patient Reviews</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="#services">Root Canal</a>
+            <a href="#services">Dental Implants</a>
+            <a href="#services">Teeth Cleaning</a>
+            <a href="#services">Crowns & Bridges</a>
+            <a href="#services">Gum Treatment</a>
+            <a href="#services">Teeth Whitening</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i data-lucide="map-pin" style="width:16px;height:16px;"></i></span>
+            <span>address</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i data-lucide="phone" style="width:16px;height:16px;"></i></span>
+            <span><a href="tel:+91XXXXXXXXXX" style="color:rgba(255,255,255,0.6);">0XXXXX XXXXX</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i data-lucide="clock" style="width:16px;height:16px;"></i></span>
+            <span>Open · 10:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Dental Care. All rights reserved.</p>
+        <div class="footer-seo">
+          Dental Clinic · Dentist in Location · Dental Care in State
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       FLOATING CTA (Mobile)
+       ============================================ -->
+  <div class="floating-cta" id="floating-cta">
+    <div class="floating-cta-inner">
+      <a href="tel:+91XXXXXXXXXX" class="btn btn-primary" id="floating-call-btn">
+        <i data-lucide="phone" style="width:16px;height:16px;"></i>
+        Call Now
+      </a>
+      <a href="maps.google" target="_blank" rel="noopener" class="btn btn-outline" id="floating-directions-btn">
+        <i data-lucide="navigation" style="width:16px;height:16px;"></i>
+        Directions
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
